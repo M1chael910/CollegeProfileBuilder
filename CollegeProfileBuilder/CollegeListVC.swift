@@ -10,6 +10,7 @@ import UIKit
 
 class CollegeListVC: UIViewController {
 
+    @IBOutlet weak var collegeListTableView: UITableView!
     
     var colleges = [College]()
     
@@ -18,8 +19,12 @@ class CollegeListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collegeListTableView.delegate = self
+        collegeListTableView.dataSource = self
     }
+    
+    
+    
 
 
 }

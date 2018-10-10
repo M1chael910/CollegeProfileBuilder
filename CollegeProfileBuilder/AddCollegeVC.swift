@@ -12,12 +12,12 @@ import SafariServices
 class AddCollegeVC: UIViewController {
     
     @IBOutlet weak var collegeNameTextField: UITextField!
-    
     @IBOutlet weak var numberOfStudentsTextField: UITextField!
-    
     @IBOutlet weak var webPageTextField: UITextField!
     
     
+    
+    var college: College!
     
     override func viewDidLoad() {
         super.viewDidLoad()
