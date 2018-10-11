@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76422199216FD0CA00172CAE /* CollegeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76422198216FD0CA00172CAE /* CollegeCell.swift */; };
 		76B7D35C216E7E9E00C1C2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */; };
 		76B7D35E216E7E9E00C1C2D5 /* CollegeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */; };
 		76B7D364216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D362216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld */; };
 		76B7D366216E7EA300C1C2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B7D365216E7EA300C1C2D5 /* Assets.xcassets */; };
 		76B7D369216E7EA300C1C2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B7D367216E7EA300C1C2D5 /* LaunchScreen.storyboard */; };
 		76B7D371216E7F7400C1C2D5 /* AddCollegeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D370216E7F7400C1C2D5 /* AddCollegeVC.swift */; };
-		76B7D373216E82BF00C1C2D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B7D372216E82BF00C1C2D5 /* Main.storyboard */; };
+		76C63B39216FD4AA008711E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C63B37216FD4AA008711E6 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76422198216FD0CA00172CAE /* CollegeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeCell.swift; sourceTree = "<group>"; };
 		76B7D358216E7E9E00C1C2D5 /* CollegeProfileBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeProfileBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeListVC.swift; sourceTree = "<group>"; };
@@ -25,7 +27,7 @@
 		76B7D368216E7EA300C1C2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B7D36A216E7EA300C1C2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B7D370216E7F7400C1C2D5 /* AddCollegeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollegeVC.swift; sourceTree = "<group>"; };
-		76B7D372216E82BF00C1C2D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		76C63B38216FD4AA008711E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */,
+				76422198216FD0CA00172CAE /* CollegeCell.swift */,
 				76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */,
 				76B7D370216E7F7400C1C2D5 /* AddCollegeVC.swift */,
 				76B7D365216E7EA300C1C2D5 /* Assets.xcassets */,
-				76B7D372216E82BF00C1C2D5 /* Main.storyboard */,
 				76B7D367216E7EA300C1C2D5 /* LaunchScreen.storyboard */,
+				76C63B37216FD4AA008711E6 /* Main.storyboard */,
 				76B7D36A216E7EA300C1C2D5 /* Info.plist */,
 				76B7D362216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld */,
 			);
@@ -128,7 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B7D373216E82BF00C1C2D5 /* Main.storyboard in Resources */,
+				76C63B39216FD4AA008711E6 /* Main.storyboard in Resources */,
 				76B7D369216E7EA300C1C2D5 /* LaunchScreen.storyboard in Resources */,
 				76B7D366216E7EA300C1C2D5 /* Assets.xcassets in Resources */,
 			);
@@ -144,6 +147,7 @@
 				76B7D35E216E7E9E00C1C2D5 /* CollegeListVC.swift in Sources */,
 				76B7D364216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld in Sources */,
 				76B7D371216E7F7400C1C2D5 /* AddCollegeVC.swift in Sources */,
+				76422199216FD0CA00172CAE /* CollegeCell.swift in Sources */,
 				76B7D35C216E7E9E00C1C2D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +161,14 @@
 				76B7D368216E7EA300C1C2D5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76C63B37216FD4AA008711E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76C63B38216FD4AA008711E6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
