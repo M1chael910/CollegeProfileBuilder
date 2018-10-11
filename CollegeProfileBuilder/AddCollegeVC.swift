@@ -24,13 +24,22 @@ class AddCollegeVC: UIViewController {
         
     }
     
+    @IBAction func collegeNameChanged(_ sender: UITextField) {
+        updateNavItem(with: sender.text!)
+    }
+    
+    
+    func updateNavItem(with text: String) {
+        self.navigationItem.title = text
+    }
     
     
     
     
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == ""
+    }
     
     
     

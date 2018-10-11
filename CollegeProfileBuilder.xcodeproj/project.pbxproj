@@ -60,13 +60,13 @@
 		76B7D35A216E7E9E00C1C2D5 /* CollegeProfileBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				76C63B37216FD4AA008711E6 /* Main.storyboard */,
 				76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */,
 				76422198216FD0CA00172CAE /* CollegeCell.swift */,
 				76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */,
 				76B7D370216E7F7400C1C2D5 /* AddCollegeVC.swift */,
 				76B7D365216E7EA300C1C2D5 /* Assets.xcassets */,
 				76B7D367216E7EA300C1C2D5 /* LaunchScreen.storyboard */,
+				76C63B37216FD4AA008711E6 /* Main.storyboard */,
 				76B7D36A216E7EA300C1C2D5 /* Info.plist */,
 				76B7D362216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld */,
 			);

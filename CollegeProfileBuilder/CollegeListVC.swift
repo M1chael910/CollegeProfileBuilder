@@ -41,6 +41,11 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     }
     
     
+    @IBAction func unwindToCollegelist(segue: UIStoryboardSegue) {
+        
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "editCollege" {
