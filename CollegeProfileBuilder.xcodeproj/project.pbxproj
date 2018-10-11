@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76422199216FD0CA00172CAE /* CollegeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76422198216FD0CA00172CAE /* CollegeCell.swift */; };
 		76B7D35C216E7E9E00C1C2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */; };
 		76B7D35E216E7E9E00C1C2D5 /* CollegeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */; };
 		76B7D364216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D362216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76422198216FD0CA00172CAE /* CollegeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeCell.swift; sourceTree = "<group>"; };
 		76B7D358216E7E9E00C1C2D5 /* CollegeProfileBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeProfileBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeListVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				76B7D35B216E7E9E00C1C2D5 /* AppDelegate.swift */,
+				76422198216FD0CA00172CAE /* CollegeCell.swift */,
 				76B7D35D216E7E9E00C1C2D5 /* CollegeListVC.swift */,
 				76B7D370216E7F7400C1C2D5 /* AddCollegeVC.swift */,
 				76B7D365216E7EA300C1C2D5 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				76B7D35E216E7E9E00C1C2D5 /* CollegeListVC.swift in Sources */,
 				76B7D364216E7E9E00C1C2D5 /* CollegeProfileBuilder.xcdatamodeld in Sources */,
 				76B7D371216E7F7400C1C2D5 /* AddCollegeVC.swift in Sources */,
+				76422199216FD0CA00172CAE /* CollegeCell.swift in Sources */,
 				76B7D35C216E7E9E00C1C2D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
