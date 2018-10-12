@@ -25,6 +25,11 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         collegeListTableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getData()
+        collegeListTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colleges.count
     }
@@ -33,6 +38,17 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "editCollege", sender: nil)
     }
+    
+    func getData() {
+        do {
+            colleges = try! context.fetch(College.fetchRequest())
+        }
+        
+        catch {
+            print("data not recieved")
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let collegeCell = tableView.dequeueReusableCell(withIdentifier: "CollegeCell", for: indexPath) as! CollegeCell
@@ -54,7 +70,12 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
             let editCollegeVC = segue.destination as! AddCollegeVC
             editCollegeVC.college = college
         }
+        
+        
+        
     }
+    
+
 
 
 }
