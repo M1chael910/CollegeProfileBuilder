@@ -16,7 +16,7 @@ class CollegeCell: UITableViewCell {
     
     func updateCell(college: College) {
         collegeTitleLbl.text = college.name
-        collegeAmountOfStudentsLbl.text = college.numberOfStudents
+        collegeAmountOfStudentsLbl.text = college.amountOfStudents
     }
     
 }

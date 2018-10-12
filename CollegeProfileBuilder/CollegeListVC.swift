@@ -15,6 +15,7 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     var colleges = [College]()
     
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
