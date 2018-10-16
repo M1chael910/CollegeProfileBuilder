@@ -62,13 +62,6 @@ class AddCollegeVC: UIViewController {
                 collegeVC.collegeListTableView.reloadData()
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
             }
-            
-            
-            
-            
-            
-            
-            
         }
     }
     
