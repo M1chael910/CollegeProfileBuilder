@@ -36,7 +36,7 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "editCollege", sender: nil)
+            self.performSegue(withIdentifier: "editCollege", sender: nil)
     }
     
     func getData() {
@@ -62,13 +62,42 @@ class CollegeListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
     }
     
+    @IBAction func editBtnPressed(_ sender: UIBarButtonItem) {
+        if sender.tag == 0 {
+            collegeListTableView.isEditing = true
+            sender.tag = 1
+        } else {
+            collegeListTableView.isEditing = false
+            sender.tag = 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let college = colleges[sourceIndexPath.row]
+        colleges.remove(at: sourceIndexPath.row)
+        colleges.insert(college, at: destinationIndexPath.row)
+    }
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let removedCollege = colleges[indexPath.row]
+            colleges.remove(at: indexPath.row)
+            context.delete(removedCollege)
+            collegeListTableView.reloadData()
+        }
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "editCollege" {
-            let college = colleges[(collegeListTableView.indexPathForSelectedRow?.row)!]
-            let editCollegeVC = segue.destination as! AddCollegeVC
-            editCollegeVC.college = college
+            
+                let college = colleges[(collegeListTableView.indexPathForSelectedRow?.row)!]
+                let editCollegeVC = segue.destination as! AddCollegeVC
+                editCollegeVC.college = college
+            
         }
         
         

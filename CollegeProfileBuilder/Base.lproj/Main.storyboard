@@ -28,21 +28,35 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xab-6e-MRJ">
-                                                    <rect key="frame" x="257" y="19" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-Aj-qdK">
-                                                    <rect key="frame" x="39" y="19" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="x8R-bv-O9A">
+                                                    <rect key="frame" x="33" y="19" width="325" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-Aj-qdK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="73z-iI-a9g"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xab-6e-MRJ">
+                                                            <rect key="frame" x="205" y="0.0" width="120" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="GzR-Aj-qdK" firstAttribute="width" secondItem="xab-6e-MRJ" secondAttribute="width" id="vob-qG-Hvj"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="x8R-bv-O9A" firstAttribute="leading" secondItem="3vj-8A-Sl6" secondAttribute="leadingMargin" constant="18" id="nw5-TG-9sC"/>
+                                                <constraint firstItem="x8R-bv-O9A" firstAttribute="top" secondItem="3vj-8A-Sl6" secondAttribute="topMargin" constant="8" id="vEZ-jv-Z4j"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="x8R-bv-O9A" secondAttribute="bottom" constant="8" id="vHK-yV-h2m"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="collegeAmountOfStudentsLbl" destination="xab-6e-MRJ" id="HSf-q7-agQ"/>
@@ -66,7 +80,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Colleges" id="iWW-9w-HR3">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="thr-0z-cSx"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="thr-0z-cSx">
+                            <connections>
+                                <action selector="editBtnPressed:" destination="BYZ-38-t0r" id="kD0-ma-VI9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="f3I-KS-EEh">
                             <connections>
                                 <segue destination="8Ez-Yn-I5X" kind="presentation" id="Ouf-uZ-aH3"/>
